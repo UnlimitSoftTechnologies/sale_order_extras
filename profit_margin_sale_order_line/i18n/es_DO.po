@@ -1,0 +1,41 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* profit_margin_sale_order_line
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-12 17:50+0000\n"
+"PO-Revision-Date: 2025-11-12 17:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: profit_margin_sale_order_line
+#: model:ir.model.fields,field_description:profit_margin_sale_order_line.field_sale_order_line__base_price
+msgid "Base price"
+msgstr "Precio base"
+
+#. module: profit_margin_sale_order_line
+#: model:ir.model.fields,help:profit_margin_sale_order_line.field_sale_order_line__profit_margin
+msgid "Percentage of profit applied over the base price."
+msgstr "Percentage of profit applied over the base price."
+
+#. module: profit_margin_sale_order_line
+#: model:ir.model.fields,field_description:profit_margin_sale_order_line.field_sale_order_line__profit_margin
+msgid "Profit margin (%)"
+msgstr "Profit margin (%)"
+
+#. module: profit_margin_sale_order_line
+#: model:ir.model,name:profit_margin_sale_order_line.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de la orden de venta"
+
+#. module: profit_margin_sale_order_line
+#: model:ir.model.fields,help:profit_margin_sale_order_line.field_sale_order_line__base_price
+msgid "Unit price before applying the profit margin."
+msgstr "Unit price before applying the profit margin."
