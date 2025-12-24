@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* profit_margin_sale_order_line
+# 	* sales_order_line_profit_margin
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-12 17:50+0000\n"
-"PO-Revision-Date: 2025-11-12 17:50+0000\n"
+"POT-Creation-Date: 2025-12-24 13:56+0000\n"
+"PO-Revision-Date: 2025-12-24 13:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -15,27 +15,60 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: profit_margin_sale_order_line
-#: model:ir.model.fields,field_description:profit_margin_sale_order_line.field_sale_order_line__base_price
+#. module: sales_order_line_profit_margin
+#: model:ir.model.fields,field_description:sales_order_line_profit_margin.field_sale_order_line__base_price
 msgid "Base price"
 msgstr "Precio base"
 
-#. module: profit_margin_sale_order_line
-#: model:ir.model.fields,help:profit_margin_sale_order_line.field_sale_order_line__profit_margin
+#. module: sales_order_line_profit_margin
+#: model:ir.model,name:sales_order_line_profit_margin.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: sales_order_line_profit_margin
+#: model:ir.model.fields,help:sales_order_line_profit_margin.field_sale_order_line__profit_margin
 msgid "Percentage of profit applied over the base price."
 msgstr "Percentage of profit applied over the base price."
 
-#. module: profit_margin_sale_order_line
-#: model:ir.model.fields,field_description:profit_margin_sale_order_line.field_sale_order_line__profit_margin
+#. module: sales_order_line_profit_margin
+#: model:ir.model.fields,field_description:sales_order_line_profit_margin.field_sale_order_line__profit_margin
 msgid "Profit margin (%)"
-msgstr "Profit margin (%)"
+msgstr "Margen de ganancia (%)"
 
-#. module: profit_margin_sale_order_line
-#: model:ir.model,name:profit_margin_sale_order_line.model_sale_order_line
+#. module: sales_order_line_profit_margin
+#: model_terms:ir.ui.view,arch_db:sales_order_line_profit_margin.use_profit_margin_config_settings
+msgid "Profit margin in sale line"
+msgstr "Margen de ganancia en la línea de venta"
+
+#. module: sales_order_line_profit_margin
+#: model:ir.model,name:sales_order_line_profit_margin.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: sales_order_line_profit_margin
+#: model:ir.model,name:sales_order_line_profit_margin.model_sale_order_line
 msgid "Sales Order Line"
 msgstr "Línea de la orden de venta"
 
-#. module: profit_margin_sale_order_line
-#: model:ir.model.fields,help:profit_margin_sale_order_line.field_sale_order_line__base_price
+#. module: sales_order_line_profit_margin
+#: model:ir.model.fields,help:sales_order_line_profit_margin.field_sale_order_line__base_price
 msgid "Unit price before applying the profit margin."
-msgstr "Unit price before applying the profit margin."
+msgstr "Precio unitario antes de aplicar el margen de ganancia."
+
+#. module: sales_order_line_profit_margin
+#: model:res.groups,name:sales_order_line_profit_margin.use_profit_margin
+msgid "Use Profit Margin"
+msgstr "Utilizar el margen de ganancia"
+
+#. module: sales_order_line_profit_margin
+#: model:ir.model.fields,field_description:sales_order_line_profit_margin.field_sale_order__use_profit_margin
+msgid "Use profit Margin"
+msgstr "Utilizar el margen de ganancia"
+
+#. module: sales_order_line_profit_margin
+#: model:ir.model.fields,field_description:sales_order_line_profit_margin.field_res_config_settings__use_profit_margin
+#: model_terms:ir.ui.view,arch_db:sales_order_line_profit_margin.use_profit_margin_config_settings
+msgid ""
+"Use the profit margin calculator on the base price for each line of sales."
+msgstr ""
+"Utilice la calculadora del margen de ganancia sobre el precio base para cada línea de ventas."
