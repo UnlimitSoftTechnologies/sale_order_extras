@@ -8,6 +8,7 @@ class ResConfigSettings(models.TransientModel):
         string="Use the profit margin calculator on the base price for each line of sales.",
         config_parameter="profit_margin_sale_order_line.use_profit_margin",
         implied_group="profit_margin_sale_order_line.use_profit_margin",
+        readonly=False,
     )
 
     def set_values(self):
