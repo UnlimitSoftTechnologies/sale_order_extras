@@ -1,14 +1,14 @@
 <section class="container py-4">
 
   <div class="text-center mb-5">
-    <h1 style="font-size:2.5rem;">PoS Session Logout Email Notification</h1>
+    <h1 style="font-size:2.5rem;">Sales Order Line Profit Margin</h1>
     <p class="lead" style="font-size:1.75rem;">
-      Automatically send email notifications when PoS sessions are logged out or closed,
-      keeping your team informed of session summaries and transaction details.
+      Manage profit margins and base prices directly on sales order lines,
+      giving your sales team greater control over pricing strategies.
     </p>
     <p style="font-size:1.4rem; font-weight:500;">
-      Compatible with <strong>Odoo SH</strong> and <strong>on-premise</strong> deployments.
-      A configured outgoing mail server is required for sending notifications.
+      Fully compatible with <strong>Odoo Community</strong> and <strong>Enterprise</strong>
+      (Odoo SH and on-premise deployments).
     </p>
   </div>
 
@@ -17,10 +17,11 @@
   <div class="mb-5">
     <h2 style="font-size:2rem;">Features</h2>
     <ul style="font-size:1.5rem; line-height:1.7;">
-      <li>Automatic email notifications when PoS sessions are logged out or closed.</li>
-      <li>Includes session details and transaction summaries in the notification.</li>
-      <li>Improves oversight and monitoring of your Point of Sale operations.</li>
-      <li>Works with standard Odoo PoS.</li>
+      <li>Enable profit margin management from the Sales module settings.</li>
+      <li>Automatically assigns authorized users to the <strong>Use Profit Margin</strong> security group.</li>
+      <li>Allows users in this group to define a profit margin and a base price per sales order line.</li>
+      <li>Dynamic recalculation between base price, profit margin, and unit price.</li>
+      <li>Works seamlessly with standard Odoo Sales workflows.</li>
     </ul>
   </div>
 
@@ -31,41 +32,42 @@
 
     <!-- Screenshot 1 -->
     <div class="my-4">
-      <img class="img-fluid" src="image_01.png" alt="PoS email notification enable checkbox">
+      <img class="img-fluid" src="image_01.png" alt="Enable profit margin option in sales settings">
       <p style="font-size:1.4rem;">
         <br>
-        <strong>Enable Email Notifications:</strong> Checkbox option to enable sending email notifications
-        when PoS sessions are closed or logged out.
+        <strong>Enable Profit Margin:</strong> Option available in Sales settings to activate
+        profit margin functionality for sales orders.
       </p>
     </div>
 
     <!-- Screenshot 2 -->
     <div class="my-4">
-      <img class="img-fluid" src="image_02.png" alt="Users list for email notifications">
+      <img class="img-fluid" src="image_02.png" alt="Use Profit Margin user group">
       <p style="font-size:1.4rem;">
         <br>
-        <strong>Email Recipients List:</strong> The option checked with a list of users selected to receive
-        the email notifications. <br> <em>Note: Users must have valid email addresses configured, not just
-          usernames.</em>
+        <strong>User Group Configuration:</strong> Users assigned to the
+        <em>Use Profit Margin</em> group gain access to profit margin and base price fields
+        on sales order lines.
       </p>
     </div>
 
     <!-- Screenshot 3 -->
     <div class="my-4">
-      <img class="img-fluid" src="image_03.png" alt="Received email notification example">
+      <img class="img-fluid" src="image_03.png" alt="Profit margin fields on sales order line">
       <p style="font-size:1.4rem;">
         <br>
-        <strong>Received Email:</strong> Example of the email notification received after a PoS session logout or
-        closure.
+        <strong>Sales Order Line Fields:</strong> Authorized users can edit the profit margin
+        and base price directly on each sales order line.
       </p>
     </div>
 
     <!-- Screenshot 4 -->
     <div class="my-4">
-      <img class="img-fluid" src="image_04.png" alt="PoS closing report example">
+      <img class="img-fluid" src="image_04.png" alt="Dynamic price recalculation example">
       <p style="font-size:1.4rem;">
         <br>
-        <strong>PoS Closing Report:</strong> Screenshot of the closing report summary included in the notification.
+        <strong>Dynamic Price Recalculation:</strong> The unit price is automatically updated
+        when changing the base price or profit margin, allowing flexible pricing scenarios.
       </p>
     </div>
 
@@ -76,12 +78,12 @@
   <div class="mb-5">
     <h2 style="font-size:2rem;">How It Works</h2>
     <p style="font-size:1.5rem; line-height:1.7;">
-      Once the module is installed, you can enable the email notification option in the PoS settings.
-      After a PoS session is closed or logged out, the system will send a summary email with key session
-      figures and transaction details to the selected list of users.
-      Ensure that your instance has a correctly configured outgoing mail server to deliver the notifications.
-      Odoo SH setups already include a mail server for basic emails; for on-premise instances, an external
-      outgoing server must be configured for email delivery.
+      After installing the module, activate the profit margin option from the Sales settings.
+      Once enabled, users assigned to the <strong>Use Profit Margin</strong> group will be able
+      to define a base price and a profit margin on each sales order line.
+      The system automatically recalculates the unit price based on the values entered,
+      allowing users to simulate different pricing scenarios by adjusting the profit margin,
+      base price, or unit price as needed.
     </p>
   </div>
 

@@ -7,6 +7,7 @@
         users to quickly assess profitability without manual calculations. View margins directly on
         sales orders and use this insight for pricing decisions and financial analysis.
     """,
+    "images": ["static/description/banner.png"],
     "summary": "Compute and display profit margins on sales order lines for better pricing and reporting.",
     "author": "Unlimitsoft",
     "maintainer": "Unlimitsoft",
