@@ -5,14 +5,18 @@
         <field name="inherit_id" ref="sale.view_order_form" />
         <field name="arch" type="xml">
 
+            <xpath expr="//group[@name='sale_header']" position="inside">
+                <field name="use_profit_margin" invisible="1" />
+            </xpath>
+
             <xpath expr="//field[@name='order_line']/list/field[@name='price_unit']"
                 widget="percentage" optional="show" position="before">
-                <field name="profit_margin" invisible="not use_profit_margin" />
+                <field name="profit_margin" groups="profit_margin_sale_order_line.use_profit_margin" />
             </xpath>
 
             <xpath expr="//field[@name='order_line']/list/field[@name='price_unit']" optional="show"
                 position="before">
-                <field name="base_price" invisible="not use_profit_margin" />
+                <field name="base_price" groups="profit_margin_sale_order_line.use_profit_margin" />
             </xpath>
         </field>
     </record>

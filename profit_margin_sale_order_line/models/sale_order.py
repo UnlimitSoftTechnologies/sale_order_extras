@@ -7,11 +7,11 @@ class SaleOrder(models.Model):
     use_profit_margin = fields.Boolean(
         string="Use profit margin",
         compute="_compute_use_profit_margin",
-        store=False,
-        readonly=True,
+        store=True,
+        readonly=False,
+        precompute=True,
     )
 
-    @api.depends()
     def _compute_use_profit_margin(self):
         param = (
             self.env["ir.config_parameter"]

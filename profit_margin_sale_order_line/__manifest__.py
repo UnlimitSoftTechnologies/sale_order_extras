@@ -17,6 +17,7 @@
     "price": 0.0,
     "depends": ["base", "account", "sale"],
     "data": [
+        "security/res_groups.xml",
         "views/sale_order_line.xml",
         "views/res_config_settings.xml",
     ],
