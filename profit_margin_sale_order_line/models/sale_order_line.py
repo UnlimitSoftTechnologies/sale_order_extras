@@ -4,6 +4,13 @@ from odoo import models, fields, api
 class ProfitMarginSaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
+    use_profit_margin = fields.Boolean(
+        related='order_id.use_profit_margin',
+        string='Use profit margin',
+        store=False,
+        readonly=True,
+    )
+
     profit_margin = fields.Float(
         string='Profit margin (%)',
         store=True,
