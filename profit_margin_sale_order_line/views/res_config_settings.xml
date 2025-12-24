@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="use_profit_margin_config_settings" model="ir.ui.view">
+        <field name="name">use.profit.margin.config.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+
+            <xpath expr="//block//setting[@id='no_edit_order']" position="after">
+
+                <setting string="Profit margin in sale line"
+                    help="Use the profit margin calculator on the base price for each line of sales.">
+
+                    <field name="use_profit_margin" />
+
+                </setting>
+
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
