@@ -6,15 +6,15 @@ class ResConfigSettings(models.TransientModel):
 
     use_profit_margin = fields.Boolean(
         string="Use the profit margin calculator on the base price for each line of sales.",
-        config_parameter="profit_margin_sale_order_line.use_profit_margin",
-        implied_group="profit_margin_sale_order_line.use_profit_margin",
+        config_parameter="sales_order_line_profit_margin.use_profit_margin",
+        implied_group="sales_order_line_profit_margin.use_profit_margin",
         readonly=False,
     )
 
     def set_values(self):
         super().set_values()
         group = self.env.ref(
-            "profit_margin_sale_order_line.use_profit_margin", raise_if_not_found=False
+            "sales_order_line_profit_margin.use_profit_margin", raise_if_not_found=False
         )
         if not group:
             return
