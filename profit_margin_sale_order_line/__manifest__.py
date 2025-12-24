@@ -1,5 +1,5 @@
 {
-    "name": "Sales Order line Profit Margin",
+    "name": "Sales Order Line Profit Margin",
     "version": "18.0.0.0.1",
     "description": """
         Enhance your Sales workflow by calculating and displaying profit margins on sales order lines.
