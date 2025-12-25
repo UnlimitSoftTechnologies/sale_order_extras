@@ -9,12 +9,12 @@
                 <field name="use_profit_margin" invisible="1" />
             </xpath>
 
-            <xpath expr="//field[@name='order_line']/list/field[@name='price_unit']"
+            <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']"
                 widget="percentage" optional="show" position="before">
                 <field name="profit_margin" groups="sales_order_line_profit_margin.use_profit_margin" />
             </xpath>
 
-            <xpath expr="//field[@name='order_line']/list/field[@name='price_unit']" optional="show"
+            <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" optional="show"
                 position="before">
                 <field name="base_price" groups="sales_order_line_profit_margin.use_profit_margin" />
             </xpath>
